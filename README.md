@@ -1,43 +1,43 @@
-# Aplicativo de gerenciamento de contatos
+# Contact Management Application
 
-## Índice
-- [Introdução](#introdução)
-- [Considerações](#considerações)
-- [Requisitos Adicionais](#requisitos-adicionais)
+## Table of Contents
+- [Introduction](#introduction)
+- [Considerations](#considerations)
+- [Additional Requirements](#additional-requirements)
 
-## Introdução
+## Introduction
 
-Este é um aplicativo simples de gerenciamento de contatos desenvolvido com a estrutura Laravel. O objetivo deste aplicativo é gerenciar uma lista de contatos, cada um com quatro campos: ID, Nome, Contato e Endereço de Email. Este README fornece algumas considerações importantes e requisitos adicionais para o desenvolvimento da aplicação.
+This is a simple contact management application built using the Laravel framework. The purpose of this application is to manage a list of contacts, each of which has four fields: ID, Name, Contact, and Email Address. This README provides some important considerations and additional requirements for the application's development.
 
-## Considerações
+## Considerations
 
-1. **Campos de contato:**
-    - **ID:** Um identificador exclusivo para cada contato.
-    - **Nome:** Deve ser uma string de qualquer tamanho maior que 5 caracteres.
-    - **Contato:** Deve consistir em 9 dígitos.
-    - **Endereço de e-mail:** Deve ser um endereço de e-mail válido.
+1. **Contact Fields:**
+   - **ID:** A unique identifier for each contact.
+   - **Name:** Should be a string of any size greater than 5 characters.
+   - **Contact:** Should consist of 9 digits.
+   - **Email Address:** Should be a valid email address.
 
-2. **Página Índice:**
-    - Cada linha da página de índice deve exibir as informações do contato.
-    - Cada linha deve conter um link para editar o contato.
-    - Cada linha deve ter um botão para exclusão reversível do contato, utilizando o recurso de exclusão reversível do Laravel.
+2. **Index Page:**
+   - Each row on the index page should display the contact's information.
+   - Each row should have a link to edit the contact.
+   - Each row should have a button to soft delete the contact, utilizing Laravel's soft delete feature.
 
-3. **Página de detalhes de contato:**
-    - A página de detalhes do contato deve exibir todos os campos do contato.
-    - Deve incluir links para editar o contato e para excluir o contato de forma reversível.
+3. **Contact Details Page:**
+   - The contact details page should display all the fields of the contact.
+   - It should include links to edit the contact and to soft delete the contact.
 
-4. **Singularidade:**
-    - O contato e o endereço de e-mail devem ser únicos. Dois contatos não podem ter o mesmo número de contato ou endereço de e-mail.
+4. **Uniqueness:**
+   - Contact and email address should be unique. Two contacts cannot have the same contact number or email address.
 
-5. **Estrutura do banco de dados:**
-    - Quaisquer informações ou dados necessários da estrutura do banco de dados devem ser adicionados usando migrações e/ou sementes. Isso garante que o banco de dados esteja configurado corretamente e possa ser facilmente replicado.
+5. **Database Structure:**
+   - Any necessary database structure information or data should be added using migrations and/or seeds. This ensures that the database is set up correctly and can be easily replicated.
 
-6. **Recursos nativos do Laravel:**
-    - Sempre use os recursos nativos do Laravel quando possível, incluindo rotas, controladores, regras de validação de formulário, exclusões suaves e outras funcionalidades integradas. Isso garante um processo de desenvolvimento consistente e eficiente.
+6. **Laravel Native Features:**
+   - Always use Laravel's native features when possible, including routes, controllers, form validation rules, soft deletes, and other built-in functionalities. This ensures a consistent and efficient development process.
 
-## Requisitos adicionais
+## Additional Requirements
 
-Além das considerações mencionadas acima, os seguintes requisitos devem ser implementados se o tempo permitir durante o desenvolvimento e teste da aplicação:
+In addition to the considerations mentioned above, the following requirements should be implemented if time permits during the development and testing of the application:
 
-1. **Autenticação:**
-    - Permitir que qualquer pessoa visualize a lista de contatos, mas restringir o acesso a outros recursos (edição e exclusão) a usuários autenticados. Você pode criar uma conta de usuário estática para essa finalidade.
+1. **Authentication:**
+   - Allow anyone to view the list of contacts, but restrict access to other features (editing and deleting) to authenticated users. You can create a static user account for this purpose.
